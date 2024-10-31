@@ -1,0 +1,270 @@
+/** ELementor Custom Element Styles **/
+
+/** Counter **/
+.mystical-counter {
+    display: flex;
+    align-items: center;
+}
+
+.mystical-counter .counter-icon {
+    line-height: 0;
+    position: relative;
+    margin-right: 40px;
+}
+
+.mystical-counter .counter-icon:after {
+    content: "";
+    width: 1px;
+    height: 40px;
+    background: #cecece;
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.mystical-counter .counter-title {
+	display: flex;
+	flex-wrap: wrap;
+	flex-flow: column;
+}
+
+.mystical-counter .counter-title .counter {
+    margin-bottom: 10px;
+}
+
+/** Room Carousel **/
+.mystical-rooms-carousel {
+    position: relative;
+}
+
+.mystical-rooms-carousel .room-post {
+    position: relative;
+    color: #ffffff;
+}
+
+.mystical-rooms-carousel .room-post .room-image {
+    overflow: hidden;
+}
+
+.mystical-rooms-carousel .room-post .room-image img {
+    transition: all 1s ease;
+}
+
+.mystical-rooms-carousel .room-post:hover .room-image > img {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.mystical-rooms-carousel .room-post .room-image:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.40);
+    position: absolute;
+    z-index: 1;
+}
+
+.mystical-rooms-carousel .room-post .room-price-title {
+    position: absolute;
+    top: 50px;
+    left: 30px;
+}
+
+.mystical-rooms-carousel .room-post .room-price-title * {
+    position: relative;
+    z-index: 1;
+}
+
+.mystical-rooms-carousel .room-post .buy-now-btn {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    color: #ffffff;
+    display: inline-block;
+    z-index: 3;
+}
+
+.mystical-rooms-carousel .room-post .buy-now-btn:after {
+    content: "";
+    height: 1px;
+    width: 0;
+    background: #fff;
+    position: absolute;
+    left: 0;
+    transition: all 0.3s ease;
+}
+
+.mystical-rooms-carousel .room-post .buy-now-btn:hover::after {
+    width: 100%;
+}
+
+.mystical-rooms-carousel .owl-nav button.owl-prev,
+.mystical-rooms-carousel .owl-nav button.owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-20%);
+    background: #292929;
+    padding: 10px !important;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.mystical-rooms-carousel .owl-nav button.owl-prev:hover,
+.mystical-rooms-carousel .owl-nav button.owl-next:hover {
+    background-color: #ec6a2a;
+}
+
+.mystical-rooms-carousel .owl-nav button.owl-prev {
+    left: 30px;
+}
+
+.mystical-rooms-carousel .owl-nav button.owl-next {
+    right: 30px;
+}
+
+/** Testimonial Carousel **/
+.mystical-testimonial-carousel .testimonial {
+    border: 1px solid #f5f5f5;
+    padding: 25px;
+    border-radius: 50px;
+    -webkit-box-shadow: 0 5px 22px 6px rgba(0,0,0,.05);
+        box-shadow: 0 5px 22px 6px rgba(0,0,0,.05);
+    position: relative;
+}
+
+.mystical-testimonial-carousel .testimonial .image {
+    height: 80px;
+    width: 80px;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.mystical-testimonial-carousel .testimonial .image img {
+    border-radius: 50%;
+}
+
+.mystical-testimonial-carousel .testimonial .testimony {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mystical-testimonial-carousel .testimonial .name-design {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.mystical-testimonial-carousel .testimonial .name {
+    margin-bottom: 0px;
+}
+
+.mystical-testimonial-carousel .lni-quotation {
+    position: absolute;
+    right: 0;
+    display: inline-block;
+    padding: 20px;
+    bottom: 0;
+    background: #ec6a2a;
+    border-radius: 50px;
+    border-top-right-radius: 0;
+    color: #fff;
+}
+
+/** Blogs Carousel **/
+.mystical-blogs-carousel .blog-image {
+    border-radius: 15px;
+    position: relative;
+}
+
+.mystical-blogs-carousel .blog-image img {
+    border-radius: 15px;
+}
+
+.mystical-blogs-carousel .post-date {
+    display: inline-block;
+    padding: 0px 20px;
+    background-color: #ec6a2a;
+    border-bottom-left-radius: 10px;
+    color: #ffffff;
+    font-size: 12px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    border-top-right-radius: 10px;
+}
+
+.mystical-blogs-carousel .blog-metas {
+    margin-top: 15px;
+}
+
+.mystical-blogs-carousel .blog-metas .cats a {
+    color: #616161;
+    font-size: 12px;
+}
+
+.mystical-blogs-carousel .blog-metas .cats a:hover {
+    color: #ec6a2a;
+}
+
+.mystical-blogs-carousel .blog-metas .post-comments {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.mystical-blogs-carousel .blog-metas .post-comments:before {
+    content: "/";
+    margin-right: 10px;
+}
+
+.mystical-blogs-carousel .blog-title a {
+    color: #000000;
+    font-weight: 600;
+}
+
+.mystical-blogs-carousel .blog-title a:hover {
+    color: #ec6a2a;
+}
+
+.mystical-blogs-carousel .breadmore-btn {
+    color: #616161;
+    text-decoration: line-through;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.mystical-blogs-carousel .breadmore-btn:hover {
+    color: #ec6a2a;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.mystical-blogs-carousel .owl-dots {
+    bottom: 0px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.mystical-blogs-carousel .owl-dots button.owl-dot {
+    width: 15px;
+    height: 15px;
+    background-color: none;
+    border: 1px solid #616161;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: all 0.3s ease;
+}
+
+.mystical-blogs-carousel .owl-dots button.owl-dot:last-child {
+    margin-right: 0;
+}
+
+.mystical-blogs-carousel .owl-dots button.owl-dot.active,
+.mystical-blogs-carousel .owl-dots button.owl-dot:hover {
+    background-color: #ec6a2a;
+    border-color: #ec6a2a;
+}
